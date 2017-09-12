@@ -1,9 +1,9 @@
-#header{
+#container{
     text-align: center;
 }
 
 #greenbar{
-    height: 5px;
+    height: 4px;
     background: #7bd651;
     text-align: center;
     margin: auto;
@@ -13,4 +13,8 @@
 #portrait{
     width: 160px;
     height: 250px;
+}
+
+ul, ol{
+    list-style-position: inside;
 }
