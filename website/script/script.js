@@ -24,6 +24,7 @@ function run_js(){
 
 
     // task 3
+    document.getElementById("task3").setAttribute("class","green")
     var task3 = document.getElementById("task3");
     var stars = input;
     while (input > 0){
