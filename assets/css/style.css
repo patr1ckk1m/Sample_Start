@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#banner h3 {
+    margin: 0;
+    padding-top:10px;
+    color: white;
+    display:inline-block;
+}
+
+#banner {
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    margin: 0;
+    display:inline-block;
+}
+
+#bannerbuttons {
+     display: inline;  
+    margin-left: 400px;
+}

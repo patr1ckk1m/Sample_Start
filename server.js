@@ -1,11 +1,22 @@
 var express = require('express');
+const path = require("path");
+const bodyParser = require('body-parser');
+
 var app = express();
+
+app.set('view engine', 'ejs');
+app.set('views', path.resolve('views'));
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.resolve('assets')));
+
+
+
+require('./routes/index.js')(app);
 
 const DEFAULT_PORT = 3377
 const port = process.env.PORT || DEFAULT_PORT
 
-// Serve up content from public directory
-app.use(express.static(__dirname + '/website'));
 
 console.log(`Server listening at port ${port}`)
 app.listen(port);
