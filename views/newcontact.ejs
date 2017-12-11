@@ -17,7 +17,35 @@
         <div id  = "bannerbuttons">
             <a class="btn btn-small btn-info" href="#">
             <i class="fa fa-list"></i> Info</a>
+
+            <a class="btn btn-small btn-info" href="/add">
+            <i class="fa fa-plus-square" aria-hidden="true"></i> New</a>
         </div>
+    </div>
+
+
+
+    <div class = "contactform">
+        <div class = "graybar">
+            <h5>New Contact</h5>
+        </div>
+        <form action="/details" method="post">
+            <div class = "contactfields">
+                <div id="name">
+                    <label for="name">Name: </label><br>
+                    <input type="text" name="name" id="" class = "inputfield">
+                </div>
+                <div id="email">
+                    <label for="email">Email: </label><br>
+                    <input type="text" name="email" id="" class = "inputfield">
+                </div>
+                <div id="phone">
+                    <label for="phone">Phone: </label><br>
+                    <input type="text" name="phone" id="" class = "inputfield">
+                </div><br>
+                <input type="submit" value="Submit" id = "submit">
+            </div>
+        </form>
     </div>
 </body>
 </html>

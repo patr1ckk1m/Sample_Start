@@ -4,18 +4,18 @@ module.exports = function Route(app){
 	 res.render("index");
 	});
 	// post route for adding a data from a survey
-	app.post('/result', function(req, res) {
+	app.post('/details', function(req, res) {
 		const submittedInfo = {
 			name: req.body.name,
-			dojoLocation: req.body.dojoLocation,
-			favoriteLanguage: req.body.favoriteLanguage,
-			comment: req.body.comment
+			email: req.body.email,
+			phone: req.body.phone
     };
 
-	 	res.render("result", { userData: submittedInfo });
+	 	res.render("details", { userData: submittedInfo });
     });
     
     app.get('/add', function(req,res){
         res.render("newcontact");
-    });
+	});
+	
 };

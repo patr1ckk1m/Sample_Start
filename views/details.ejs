@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website Template</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
 </head>
-
 <body>
+
     <div id = "banner">
         <h3>Contact Management</h3>
         <div id  = "bannerbuttons">
@@ -21,9 +20,24 @@
             <a class="btn btn-small btn-info" href="/add">
             <i class="fa fa-plus-square" aria-hidden="true"></i> New</a>
         </div>
-    </div>
+	</div>
+	
+	<div id = "detailsform">
+		<div class = "graybar">
+			<h2>Contact</h2>
+		</div>
 
+		<label for="name">Name: </label>
+		<strong><%= userData.name %></strong><br>
+		<label for="name">Name: </label>
+		<strong><%= userData.email %></strong><br>
+		<label for="name">Name: </label>
+		<strong><%= userData.phone %></strong>
 
-    <h1>Contact List</h1>
+		<div class = "graybar">
+			<h2>Contact</h2>
+		</div>
+	</div>
+
 </body>
 </html>

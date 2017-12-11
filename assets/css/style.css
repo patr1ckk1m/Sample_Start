@@ -8,6 +8,7 @@ body {
     padding-top:10px;
     color: white;
     display:inline-block;
+    font-size: 20px;
 }
 
 #banner {
@@ -20,5 +21,46 @@ body {
 
 #bannerbuttons {
      display: inline;  
-    margin-left: 400px;
+    margin-left: 200px;
+}
+
+.contactform {
+    height: 300px;
+    width: 600px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 4px;
+    margin: 25px 0px 0px 50px;
+}
+
+.graybar {
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+}
+
+.contactfields {
+    margin-left: 15px;
+}
+
+#submit {
+    color: white;
+    background-color: seagreen;
+    margin-left: 510px;
+    border-radius: 5px;
+}
+
+.inputfield {
+    width: 575px;
+}
+
+#detailsform {
+    height: 197px;
+    width: 600px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 4px;
+    margin: 25px 0px 0px 50px;
 }
