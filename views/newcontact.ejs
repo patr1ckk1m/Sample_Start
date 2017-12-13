@@ -12,11 +12,23 @@
 </head>
 
 <body>
+    <script>
+        function check_phone(pnum){
+            var regex = /^((?![0-1])[0-9]{10})$/g;
+            if(regex.test(pnum.phone.value)){
+                return true;
+            }
+            else{
+                alert("Phone number must be 10 numbers long and cannot start with 0 or 1");
+                return false;
+            }
+        }
+    </script>
     <div id = "banner">
         <h3>Contact Management</h3>
         <div id  = "bannerbuttons">
-            <a class="btn btn-small btn-info" href="#">
-            <i class="fa fa-list"></i> Info</a>
+            <a class="btn btn-small btn-info" href="/">
+            <i class="fa fa-list"></i> Index</a>
 
             <a class="btn btn-small btn-info" href="/add">
             <i class="fa fa-plus-square" aria-hidden="true"></i> New</a>
@@ -29,19 +41,19 @@
         <div class = "graybar">
             <h5>New Contact</h5>
         </div>
-        <form action="/details" method="post">
+        <form action="/details" method="post" onSubmit="return check_phone(this)"> <!-- posting to /details route -->
             <div class = "contactfields">
                 <div id="name">
                     <label for="name">Name: </label><br>
-                    <input type="text" name="name" id="" class = "inputfield">
+                    <input type="text" name="name" id="" class = "inputfield" required>
                 </div>
                 <div id="email">
                     <label for="email">Email: </label><br>
-                    <input type="text" name="email" id="" class = "inputfield">
+                    <input type="email" name="email" id="" class = "inputfield" required>
                 </div>
                 <div id="phone">
                     <label for="phone">Phone: </label><br>
-                    <input type="text" name="phone" id="" class = "inputfield">
+                    <input type="text" name="phone" id="" class = "inputfield" required>
                 </div><br>
                 <input type="submit" value="Submit" id = "submit">
             </div>

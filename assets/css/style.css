@@ -64,3 +64,16 @@ body {
     border-radius: 4px;
     margin: 25px 0px 0px 50px;
 }
+
+#detailsform strong {
+    background-color: blue;
+    color: white;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+table {
+    width: 800px;
+}
